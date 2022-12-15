@@ -2,20 +2,13 @@
 import { useState } from "react";
 import Todos from "./Todos";
 
-const App1 = () => {
+const App3 = () => {
   const [count, setCount] = useState(0);
   const [todos, setTodos] = useState<string[]>([]);
 
-  const increment = () => {
-    setCount((c) => c + 1);
-  };
-  const addTodo = () => {
-    setTodos((t) => [...t, "New Todo"]);
-  };
-
   return (
     <>
-      <h2>My Todos (wrong)</h2>
+      <h2>My Todos (function - wrong)</h2>
       <Todos todos={todos} addTodo={addTodo} />
       <hr />
       <div>
@@ -24,6 +17,13 @@ const App1 = () => {
       </div>
     </>
   );
+
+  function increment() {
+    setCount((c) => c + 1);
+  }
+  function addTodo() {
+    setTodos((t) => [...t, "New Todo"]);
+  }
 };
 
-export default App1;
+export default App3;

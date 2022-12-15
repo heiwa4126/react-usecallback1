@@ -2,19 +2,12 @@
 import "./App.css";
 import App1 from "./components/App1";
 import App2 from "./components/App2";
-import AppSelect from "./AppSelect";
-import { createElement, useState } from "react";
+import App3 from "./components/App3";
+import AppSelector from "./components/AppSelector";
 
-const apps = [App1, App2];
-
-const App = () => {
-  const [appNr, setAppNr] = useState(0);
-  return (
-    <>
-      <AppSelect apps={apps} onClick={(n) => setAppNr(n)} />
-      {createElement(apps[appNr])}
-    </>
-  );
-};
+function App() {
+  console.log("App render");
+  return <AppSelector apps={[App1, App2, App3]} />;
+}
 
 export default App;
