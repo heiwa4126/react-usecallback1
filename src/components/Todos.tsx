@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Todos = ({ todos, addTodo }: Props) => {
-  console.log("child render");
+  console.log("Todos render");
   return (
     <>
       {todos.map((todo, index) => {
