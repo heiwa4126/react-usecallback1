@@ -8,6 +8,12 @@ countの+を押すと、Todosまで再レンダリングされてしまう。
 
 App2が望ましい実装。
 
+- useCallbackしてないインライン関数
+- function
+- 無名関数
+
+全部ダメ。クラスコンポーネントはまだ不明。
+
 さらに
 [意味のない useCallback とその理由と解消法 - Qiita](https://qiita.com/jonakp/items/0db6fb9e75edcec875b2)
 のサンプル追加。Bpp3参照。

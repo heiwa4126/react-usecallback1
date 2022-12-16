@@ -12,7 +12,7 @@ const App4 = () => {
 
   return (
     <>
-      <h2>My Todos (inline - wrong)</h2>
+      <h2>My Todos (anonymous function - wrong)</h2>
       <Todos
         todos={todos}
         addTodo={() => {
